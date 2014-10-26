@@ -1,6 +1,6 @@
-## Introduction
+## Course Project
 
-This document explains how all of the scripts work and how they are connected.
+This document explains how the run_analysis.R works.
 
 * <b>Raw data</b>: To run the R script, please create under your home directory: ~/coursera/getdata. The unzipped data goes under "~/coursera/getdata/project_data". 
 
@@ -18,23 +18,3 @@ The following describes how to do the 5 tasks of the project:
 <li><b>From the data set in step 4, creates a second, independent tidy data set with the average of each 
 # variable for each activity and each subject</b>: melt and dcast is used to generate mean for each unique combination of subject and activity. The output file is written to ~/coursera/getdata/project_tidy_data.tsv with tab used as separater </li>
 </ol>
-
-
-
-
-
-
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
